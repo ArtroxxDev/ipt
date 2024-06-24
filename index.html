@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>EXPO TÉCNICA IPT 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3f2a1d;
+            color: #fff;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .header {
+            text-align: center;
+            position: relative;
+        }
+        .header img.logoimg {
+            max-width: 150px;
+            margin: 10px;
+        }
+        .header h1 {
+            font-family: 'Anton', sans-serif;
+            font-size: 3em;
+            margin: 10px 0;
+        }
+        .header p {
+            font-size: 1.2em;
+            font-style: italic;
+        }
+        .quote {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .sections div {
+            width: 30%;
+        }
+        .sections div i {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: auto;
+        }
+        .footer img {
+            width: 64px;
+            height: 64px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .qr-code {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+        @media (max-width: 768px) {
+            .sections {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sections div {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="http://www.ing.una.py/wp-content/uploads/2023/10/logos_horizontal_transp-e1698418332418.png" class="logoimg">
+                <h1>EXPO TÉCNICA IPT 2024</h1>
+                <img src="./logo-ipt-removebg-preview.png" class="logoimg">
+            </div>
+            <p>"La imaginación es más importante que el conocimiento." - Albert Einstein</p>
+        </div>
+        <div class="quote">
+            <p>Instituto Paraguayo de Telecomunicaciones</p>
+        </div>
+        <div class="sections">
+            <div>
+                <i class="fas fa-bolt"></i>
+                <p>Electrónica</p>
+            </div>
+            <div>
+                <i class="fas fa-building"></i>
+                <p>Construcciones civiles</p>
+            </div>
+            <div>
+                <i class="fas fa-cogs"></i>
+                <p>Mecánica General</p>
+            </div>
+        </div>
+        <!-- <img src="https://www.abc.com.py/resizer/v2/https%3A%2F%2Farc-anglerfish-arc2-prod-abccolor.s3.amazonaws.com%2Fpublic%2FKDYHJFMG4ZDZFMQGRN4DHMH4UA.jpg?auth=7b2940822afd6f5c1acc165bf05f185dcdc5703712a9715f80706798db7d7899&width=770&smart=true" alt="" class="img-fluid mt-3"> -->
+        <div class="footer">
+            <div>
+                <img src="https://img.icons8.com/dusk/64/000000/calendar.png" alt="Fecha">
+                <p>9 de Agosto de 2024</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/dusk/64/000000/clock.png" alt="Hora">
+                <p>Desde las 7:00 hs a 16:00 hs</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/dusk/64/000000/map-pin.png" alt="Lugar">
+                <p>Campo vía casi puerto Pinasco - Isla Bogado - Luque</p>
+            </div>
+        </div>
+        <div class="qr-code">
+            <img src="./frame (1).png" alt="QR Code">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
