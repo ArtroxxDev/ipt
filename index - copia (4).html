@@ -141,24 +141,9 @@
                 text-align: center;
             }
         }
-        .export-buttons {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .export-buttons button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
-    <!-- <div class="export-buttons">
-        <button onclick="exportAsPDF()">Exportar como PDF</button>
-        <button onclick="exportAsJPG()">Exportar como JPG</button>
-        <button onclick="exportAsPNG()">Exportar como PNG</button>
-    </div> -->
     <div class="container">
         <div class="header">
             <img src="./image-removebg-preview (2).png" alt="Facultad de Ingeniería" class="logo-left">
@@ -189,51 +174,21 @@
         </div>
         <div class="footer">
             <div>
-                <img src="./calendar.png" alt="Fecha">
+                <img src="https://img.icons8.com/dusk/64/000000/calendar.png" alt="Fecha">
                 <p>9 de Agosto de 2024</p>
             </div>
             <div>
-                <img src="./place-marker.png" alt="Lugar">
-                <p>Facultad de Ingeniería - UNA</p>
+                <img src="https://img.icons8.com/dusk/64/000000/clock.png" alt="Hora">
+                <p>Desde las 7:00 hs a 16:00 hs</p>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/dusk/64/000000/map-pin.png" alt="Lugar">
+                <p>Campo vía casi puerto Pinasco - Isla Bogado - Luque</p>
             </div>
         </div>
         <div class="qr-code">
-            <img src="./frame (1).png" alt="Código QR">
+            <img src="./frame (1).png" alt="QR Code">
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script>
-        function exportAsPDF() {
-            const element = document.querySelector('.container');
-            const opt = {
-                margin:       1,
-                filename:     'expotecnica_ipt_2024.pdf',
-                image:        { type: 'jpeg', quality: 0.98 },
-                html2canvas:  { scale: 2 },
-                jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-            };
-            html2pdf().from(element).set(opt).save();
-        }
-
-        function exportAsJPG() {
-            const container = document.querySelector('.container');
-            html2canvas(container).then(canvas => {
-                const link = document.createElement('a');
-                link.href = canvas.toDataURL('image/jpeg');
-                link.download = 'expotecnica_ipt_2024.jpg';
-                link.click();
-            });
-        }
-
-        function exportAsPNG() {
-            const container = document.querySelector('.container');
-            html2canvas(container).then(canvas => {
-                const link = document.createElement('a');
-                link.href = canvas.toDataURL('image/png');
-                link.download = 'expotecnica_ipt_2024.png';
-                link.click();
-            });
-        }
-    </script>
 </body>
 </html>
